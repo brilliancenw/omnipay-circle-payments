@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Omnipay Circle Payments plugin for Craft CMS
+ *
+ * OmnipayCirclePaymentsWidget Widget Settings
+ *
+ * @author    Brilliance
+ * @copyright Copyright (c) 2021 Brilliance
+ * @link      https://www.brilliancenw.com/
+ * @package   OmnipayCirclePayments
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("brilliance\\omnipaycirclepayments\\assetbundles\\omnipaycirclepayments\\OmnipayCirclePaymentsAsset") %}
+
+{{ forms.textField({
+    label: 'Message',
+    instructions: 'Enter a message here.',
+    id: 'message',
+    name: 'message',
+    value: widget['message']})
+}}

@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Omnipay Circle Payments plugin for Craft CMS
+ *
+ * OmnipayCirclePaymentsUtility Utility Content
+ *
+ * @author    Brilliance
+ * @copyright Copyright (c) 2021 Brilliance
+ * @link      https://www.brilliancenw.com/
+ * @package   OmnipayCirclePayments
+ * @since     1.0.0
+ */
+#}
+
+<h1>OmnipayCirclePaymentsUtility</h1>
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@brilliance/omnipaycirclepayments/assetbundles/omnipaycirclepaymentsutilityutility/dist', true) ~ '/img/OmnipayCirclePaymentsUtility-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>Your Utility content goes here</p>
+
+<p>{{ someVar }}</p>

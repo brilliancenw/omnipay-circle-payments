@@ -1,0 +1,40 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Omnipay Circle Payments plugin for Craft CMS 3.x
+ *
+ * Omnipay Circle Payments index.twig
+ *
+ * @author    Brilliance
+ * @copyright Copyright (c) 2021 Brilliance
+ * @link      https://www.brilliancenw.com/
+ * @package   OmnipayCirclePayments
+ * @since     1.0.0
+ */
+#}
+
+{% extends "_layouts/cp" %}
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("brilliance\\omnipaycirclepayments\\assetbundles\\omnipaycirclepayments\\OmnipayCirclePaymentsAsset") %}
+{% do view.registerAssetBundle("brilliance\\omnipaycirclepayments\\assetbundles\\indexcpsection\\IndexCPSectionAsset") %}
+
+{% set docsUrl = "???" %}
+
+{% set title = "Omnipay Circle Payments" %}
+
+{% set pluginCpUrl = url('omnipay-circle-payments') %}
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@brilliance/omnipaycirclepayments/assetbundles/indexcpsection/dist', true) ~ '/img/Index-icon.svg' %}
+
+{% set extraPageHeaderHtml %}
+    <div class="buttons">
+        <a href="{{ pluginCpUrl }}" class="btn submit add icon">{{ "Click Me!"|t('omnipay-circle-payments') }}</a>
+    </div>
+{% endset %}
+
+{% set content %}
+    <h2>{{ "Index CP Section body goes here"|t('omnipay-circle-payments') }}</h2>
+    <img src="{{ iconUrl }}" height="64" width="64" />
+    <p class="textline"></p>
+{% endset %}

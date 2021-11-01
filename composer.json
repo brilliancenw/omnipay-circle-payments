@@ -1,0 +1,44 @@
+{
+    "name": "brilliance/omnipay-circle-payments",
+    "description": "Omnipay Circle Payments",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "omnipay circle payments"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brilliance",
+            "homepage": "https://www.brilliancenw.com/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "brilliance\\omnipaycirclepayments\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Omnipay Circle Payments",
+        "handle": "omnipay-circle-payments",
+        "developer": "Brilliance",
+        "developerUrl": "https://www.brilliancenw.com/",
+        "documentationUrl": "???",
+        "changelogUrl": "???",
+        "components": {
+            "omnipayCirclePaymentsService": "brilliance\\omnipaycirclepayments\\services\\OmnipayCirclePaymentsService"
+        },
+        "class": "brilliance\\omnipaycirclepayments\\OmnipayCirclePayments"
+    }
+}
